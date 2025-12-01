@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease;
+}
+
+.dark {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
