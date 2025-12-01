@@ -32,7 +32,7 @@ export const todoSlice = createSlice({
       state.todos.push({
         id: nanoid(),
         text: action.payload,
-        completed: false,
+        completed: action.payload.completed || false,
       });
       saveTodosToLocalStorage(state.todos);
     },
